@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.CurrentWeatherExpandedDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_bg_buttons"
+                android:orientation="vertical">
+
+                <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                    android:id="@+id/tvPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                    android:id="@+id/tvHumidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_bg_buttons"
+                android:orientation="vertical">
+
+                <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                    android:id="@+id/tvClouds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                    android:id="@+id/tvVisibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg_buttons"
+            android:orientation="vertical">
+
+            <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                android:id="@+id/tvWind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                android:id="@+id/tvWindGust"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                android:id="@+id/tvWindDegree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.kolotseyd.weatherapp.view.GradientTextViewGray
+                android:id="@+id/tvWindDirection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/rounded_bg_buttons"
+        android:orientation="horizontal">
+
+        <com.kolotseyd.weatherapp.view.GradientTextViewGray
+            android:id="@+id/tvUVIndex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:paddingHorizontal="10dp"
+            android:text="UV index:"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:text="@string/close"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_bg_buttons"/>
+
+</LinearLayout>

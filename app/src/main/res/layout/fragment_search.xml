@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bg_buttons"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            app:srcCompat="@drawable/arrow_back_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_bar_bg"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/search_light" />
+
+        <EditText
+            android:id="@+id/etSearchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/search_bar_bg"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/search_location"
+            android:textColorHint="@color/search_bar_text_color" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:text="Next days"
+        android:textColor="@color/active_bottom_nav_menu_item"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/main_item_rounded_bg"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:translationZ="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:gravity="center"
+            android:text="Potential Weather"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tvFirstDayTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="27"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:id="@+id/tvFirstDayDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingHorizontal="5dp"
+                android:gravity="center|start"
+                android:text="Today \n27 may 2022"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivFirstDayWeatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_foreground" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:minHeight="2dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="1dp"
+            android:background="@color/divider_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tvSecondDayTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="27"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tvSecondDayDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingHorizontal="5dp"
+                android:gravity="center|start"
+                android:text="Today \n27 may 2022"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivSecondDayWeatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_foreground" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:minHeight="2dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="1dp"
+            android:background="@color/divider_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tvThirdDayTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="27"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tvThirdDayDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingHorizontal="5dp"
+                android:gravity="center|start"
+                android:text="Today \n27 may 2022"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivThirdDayWeatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_foreground" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>
